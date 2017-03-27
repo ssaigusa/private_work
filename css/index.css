@@ -41,6 +41,14 @@ nav.fixed {
     width:50px;
 }
 
+.attention {
+    color:crimson;
+}
+
+#page_title{
+    font-weight: 600;
+}
+
 #title_arrow {
     font-size:2em;
     margin-top:30px;
