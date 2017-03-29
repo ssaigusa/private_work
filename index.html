@@ -5,12 +5,16 @@
     <title>スーパーファミコンを筐体にしてエフェクターを自作した</title>
     <meta charset="UTF-8">
 
-    <!-- favicon -->
-    <link href="img/favicons.png" rel="shortcut icon" />
-    <link href="img/favicons.png" rel="apple-touch-icon">
+    <!-- ファビコン -->
+    <link href="http://3.bp.blogspot.com/-bEbs2cGNJSo/VQNlSDiVDkI/AAAAAAAAAGA/IR6e06xbO8E/s1600/1821-nintendo-snes-pc-engine-dos-favicon.png"
+        rel="shortcut icon" />
+    <link href="http://3.bp.blogspot.com/-bEbs2cGNJSo/VQNlSDiVDkI/AAAAAAAAAGA/IR6e06xbO8E/s1600/1821-nintendo-snes-pc-engine-dos-favicon.png"
+        rel="apple-touch-icon">
 
-    <!-- Icon Font -->
+    <!-- Googleアイコン -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 
     <!-- css -->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
@@ -18,33 +22,32 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
 
-    <!--Let browser know website is optimized for mobile-->
+    <!-- ビューポ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body class="amber lighten-5">
-    <!--Import jQuery before materialize.js-->
+<body class="grey lighten-5">
+    <!-- js -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 
-    <!-- Header -->
-    <nav class="red darken-4 fixed">
+    <!-- ヘッダ -->
+    <nav class="grey darken-1 fixed">
         <div class="nav-wrapper">
-            <img id="header_img" src="img/snes_logo.png">            
+            <img id="header_img" src="img/snes_logo.png">
         </div>
     </nav>
 
-    <!--TOP IMAGE-->
+    <!-- TOP -->
     <div class="top-image center-align ">
-        <div class="top-image-transparent  white-text">
-            <!--トップ-->
+        <div class="top-image-transparent  white-text">           
             <div class="top-image-title animated zoomIn">
                 <div class="title-icon">
                     <img src="img/snes_logo.png">
                 </div>
                 <h5 id="page_title">スーパーファミコンを筐体にしてエフェクターを自作した</h5>
-                <small>- How to make a SNES stomp box -</small>
+                <small>- How to make a stomp box in the Nintendo SNES -</small>
             </div>
             <i id="title_arrow" class="material-icons animated fadeOut infinite">keyboard_arrow_down</i>
         </div>
@@ -53,106 +56,51 @@
     <!--コンテンツ-->
     <div id="main_contents" class="container">
         <div class="contents">
+            
+            <h2>ここに画像</h2>
+            <p>結論から言うと、スーパーファミコンを筐体にした、そこそこローノイズでノブを0にしてもやたら歪み、尋常じゃないほど音量がでるシリコントランジスタ版の某ファズ工場を作った。</p>
+            <p>とにかく予め言っておきたいのは、今回あくまで<b>スーファミは”筐体(＝入れ物)”であって、カセットで音が変わったり、コントローラーで音を変化させたりなどは一切できない。</b>ここは夢がなくて申し訳ない…。</p>
 
-            <div class="contents-cusomer contents-util">
-                <div class="contents-header red-text text-darken-3">                    
+            <div class="contents-motivation contents-util">
+                <div class="contents-header grey-text text-darken-3">
                     <h5>動機っぷり</h5>
                     <h6>Things We've Done</h6>
                 </div>
-                <p>ギターを弾くためのモチベーションをアゲたかったので、数年ぶりにエフェクターを作ることにした。学生時代は創作意欲だけでパーツを買い、作る前に飽きるというトンデモ早漏無駄遣いを繰り返していたので、家には腐るほど部品があった。</p>                
-                <p>結論から言うと、スーパーファミコンを筐体にした、そこそこローノイズでノブを0にしてもやたら歪み、尋常じゃないほど音量がでるシリコントランジスタ版の某ファズ工場を作った。</p>
+                <p>ギターを弾くモチベーションをアゲたかったので、数年ぶりにエフェクター<small class="attention">※</small>を作ることにした。学生時代はネットで配線図を見つけ、リビドーでパーツを買い、作る前に飽きるというトンデモ早漏無駄遣いを繰り返していたので、家には腐るほど部品があった。</p>
                 <small class="attention">※エフェクターとは、ギタリスト、ベーシストが演奏中にON/OFFを切り替えて音色を変化させる機材のことらしい。</small>
             </div>
 
-            <div class="contents-cusomer contents-util">
-                <div class="contents-header red-text text-darken-3">                    
-                    <h5>なぜスーファミに、なぜファズなの</h5>
+            <div class="contents-reason contents-util">
+                <div class="contents-header grey-text text-darken-3">
+                    <h5>なぜスーファミ、なぜファズ</h5>
                     <h6>Why Japanese People</h6>
-                </div>
-                <p>高校生時代、尊敬するギタリスト(現在療養中)が自作のスーファミファズをメイン機材として使用しており、界隈で矢鱈と話題になった。その見た目のインパクトとワクワク感はまさに少年時代のソレだった。</p>
-                <p>これに憧れて、実は高校2年生くらいの頃に、Mくんとスーファミファズ作成に一度チャレンジしたことがあった。音は出るがつまみが効かない等、結果的に失敗したので、そのまま高校の軽音楽部に奉納して卒業してしまった。</p>
-                <p>あれから数年経ち、僅かながら知識も見についてきた(し、お金もない)ので、スーファミリベンジに燃えることとなった。</p>
+                </div>                
+                <p>尊敬するギタリスト<small class="attention">※</small>が自作のスーファミファズをメイン機材として使用しており、一時期矢鱈と話題になった。その見た目のインパクトとワクワク感はまさに少年時代のソレだった。</p>
+                <p>これに憧れて、実は高校2年生くらいの頃に、友人Mくんとスーファミファズ作成に一度チャレンジしたことがあった。音は出るがつまみが効かない等、結果的に失敗したので、そのまま高校の軽音楽部に奉納して卒業してしまった。</p>
+                <p>あれから数年経ち、僅かながら知識も見についてきた(し、お金もない)ので、スーファミファズ工場リベンジに燃えることとなった。</p>
+                <small class="attention">※このギタリストは某ファズ工場ではなく、現在では入手困難な某超ファズを自作していた。僕は基板が簡単という理由で某ファズ工場を作ることにした。</small>
             </div>
 
-            <div class="contents-sales contents-util">
-                <div class="contents-header red-text text-darken-3">
-                    <i class="material-icons contents-header-icon">wb_incandescent</i>
-                    <h5>ビジネス拡大 / Sales Improvization</h5>
-                    <h6>EC /キャンペーンサイト・アプリ</h6>
-                </div>
-                <p>ビジネスを広げる際にECやキャンペーンサイト・アプリは不可欠なものになりました。<br>しかしながら、フロントからバックエンド、複数の対応端末が必要、SEO対策など、対応範囲は多岐に渡ります。<br>そのため、1サービスにもかかわらず複数社に役割分担されてしまい、ハンドリングが難しくなってしまうことが少なくありません。<br>テックファームはワンストップソリューションで一括対応。<br>お客様のご負担を最小限におさえます。</p>
-            </div>
-
-            <div class="contents-product contents-util">
-                <div class="contents-header red-text text-darken-3">
-                    <i class="material-icons contents-header-icon">timer</i>
-                    <h5>生産効率化 / Productivity Improvization</h5>
-                    <h6>IoT</h6>
-                </div>
-                <p>IoT（ Internet of Things）とは、「モノのインターネット」のこと。<br>PCやスマホなどの情報通信端末に加えて、すべてのモノがインターネットにつながり、<br>今までのビジネスや生活が変化するといわれています。<br>テックファームは、Beacon（※）端末を利用したIoTプラットフォームを開発。<br>人やモノの位置情報を集約・分析することで、より生産効率を高めます。<br><br>
-                <small>※Bluetooth信号で位置情報などを発信する端末。<br>一定の距離にスマートフォンが接近するとプッシュ通知をするなどの活用方法があります。</small>
-                </p>
-            </div>
         </div>
     </div>
 
-    <div class="contents-solution contents-util center-align">
+    <div class="contents-finally contents-util center-align">
         <div class="container">
             <h5>編集後記</h5>
         </div>
     </div>
 
-    <div class="contact center-align">
-        <button id="contact_btn" class="waves-effect waves-light btn-large light-blue accent-4">お問合わせはこちらから</button>
-    </div>
-
-    <div class="companies container center-align">        
-        <img id="group_img" src="img/group_tate.jpg" width="80px">
-        <p id="group_header">LINKS</p>
-        <div class="companies-border"></div>
-        <div class="grey-text row">
-            <div class="col m3 s12 companies-util company-1">
-                <ul>
-                    <li class="black-text">Techfirm Holdings Inc.</li>
-                    <li><small>www.techfirm-hd.com</small></li>
-                    <li><img src="img/171x87.png" width="50px"><img src="img/jasdaq.png" width="40px"></li>
-                </ul>
-            </div>
-            <div class="col m3 s12 companies-util company-2">
-                <ul>
-                    <li class="black-text">Techfirm Inc.</li>
-                    <li><small>www.techfirm.co.jp</small></li>
-                    <li><img src="img/171x87.png" width="50px"><img src="img/privacy.png" width="40px"></li>
-                </ul>
-            </div>
-            <div class="col m3 s12 companies-util company-3">
-                <ul>
-                    <li class="black-text">Prism Solutions Inc.</li>
-                    <li><small>www.prismsol.com</small></li>
-                    <li>カジノ施設向けモバイル電子決済<br>ソリューションパッケージ</li>
-                </ul>
-            </div>
-            <div class="col m3 s12 companies-util company-4">
-                <ul>
-                    <li class="black-text">EBE Inc.</li>
-                    <li><small>www.e-b-e.co.jp</small></li>
-                    <li>自動車関連システムパッケージ</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
     <!--ふった-->
-    <footer class="page-footer red white-text">
+    <footer class="page-footer grey white-text">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
-                    <p>Techfirm USA Inc. 111 Anza Blvd., #304, Burlingame,CA 94010</p>
+                    <p>最後までお付き合い頂き、ありがとうございました。</p>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright red-accent">
-            <div class="container"><small>2017 © Techfirm Inc, All rights reserved.</small></div>
+        <div class="footer-copyright grey-accent">
+            <div class="container"><small>2017 © Suguruguruguru もちろんリンクフリー</small></div>
         </div>
     </footer>
 </body>

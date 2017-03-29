@@ -83,7 +83,7 @@ nav.fixed {
     /*
         background-image: url("../img/top_bg_2.jpg");
     */
-    background-color:firebrick;
+    background-color:lightslategrey;
     background-position: top center;    
     background-size: cover;    
     height:100vh;
@@ -99,14 +99,16 @@ nav.fixed {
 }
 
 .top-image-title {
-    padding-top:calc(40vh - 120px);        
+    padding-top:calc(40vh - 80px);
+    padding-left:40px;
+    padding-right:40px;
 }
 
 .top-image-title h3 {
     font-size: calc( 2em + 0.75vw );
 }
 
-.contents-solution {
+.contents-finally {
     color:white;
     padding:20px;
     background-image: url("../img/top_bg_2.jpg");
