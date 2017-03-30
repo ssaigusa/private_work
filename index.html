@@ -41,7 +41,7 @@
 
     <!-- TOP -->
     <div class="top-image center-align ">
-        <div class="top-image-transparent  white-text">           
+        <div class="top-image-transparent  white-text">
             <div class="top-image-title animated zoomIn">
                 <div class="title-icon">
                     <img src="img/snes_logo.png">
@@ -56,7 +56,7 @@
     <!--コンテンツ-->
     <div id="main_contents" class="container">
         <div class="contents">
-            
+
             <h2>ここに画像</h2>
             <p>結論から言うと、スーパーファミコンを筐体にした、そこそこローノイズでノブを0にしてもやたら歪み、尋常じゃないほど音量がでるシリコントランジスタ版の某ファズ工場を作った。</p>
             <p>とにかく予め言っておきたいのは、今回あくまで<b>スーファミは”筐体(＝入れ物)”であって、カセットで音が変わったり、コントローラーで音を変化させたりなどは一切できない。</b>ここは夢がなくて申し訳ない…。</p>
@@ -64,7 +64,7 @@
             <div class="contents-motivation contents-util">
                 <div class="contents-header grey-text text-darken-3">
                     <h5>動機っぷり</h5>
-                    <h6>Things We've Done</h6>
+                    <h6>Things we've done</h6>
                 </div>
                 <p>ギターを弾くモチベーションをアゲたかったので、数年ぶりにエフェクター<small class="attention">※</small>を作ることにした。学生時代はネットで配線図を見つけ、リビドーでパーツを買い、作る前に飽きるというトンデモ早漏無駄遣いを繰り返していたので、家には腐るほど部品があった。</p>
                 <small class="attention">※エフェクターとは、ギタリスト、ベーシストが演奏中にON/OFFを切り替えて音色を変化させる機材のことらしい。</small>
@@ -73,20 +73,220 @@
             <div class="contents-reason contents-util">
                 <div class="contents-header grey-text text-darken-3">
                     <h5>なぜスーファミ、なぜファズ</h5>
-                    <h6>Why Japanese People</h6>
-                </div>                
+                    <h6>Why Japanese people</h6>
+                </div>
                 <p>尊敬するギタリスト<small class="attention">※</small>が自作のスーファミファズをメイン機材として使用しており、一時期矢鱈と話題になった。その見た目のインパクトとワクワク感はまさに少年時代のソレだった。</p>
                 <p>これに憧れて、実は高校2年生くらいの頃に、友人Mくんとスーファミファズ作成に一度チャレンジしたことがあった。音は出るがつまみが効かない等、結果的に失敗したので、そのまま高校の軽音楽部に奉納して卒業してしまった。</p>
                 <p>あれから数年経ち、僅かながら知識も見についてきた(し、お金もない)ので、スーファミファズ工場リベンジに燃えることとなった。</p>
                 <small class="attention">※このギタリストは某ファズ工場ではなく、現在では入手困難な某超ファズを自作していた。僕は基板が簡単という理由で某ファズ工場を作ることにした。</small>
             </div>
 
+            <div class="contents-production contents-util">
+                <div class="contents-header grey-text text-darken-3">
+                    <h5>パーツを買おう</h5>
+                    <h6>Get your electric components</h6>
+                </div>
+
+                <p>ファズ工場本家は、ゲルマニウムトランジスタ(AC128)という現在ではかなり貴重なパーツを使用している。店舗ではまず買えない(と思う)。通販では割りと頻繁に見かけるが、一個400円～500円という、トランジスタとしては考えられないタバコ価格を発揮してくる。スーパーアナログなパーツ故、<b>熱に弱い、温度変化に敏感、動作も不安定</b>という、<b>デジタル世代顔面真っ青</b>な特徴を持つ。本当はそこが一番このファズの味になるのだろうけど…。</p>
+                <p>参考 :<br>
+                    <a href="http://www.digimart.net/magazine/article/2015070101489.html" target="_blank">ゲルマニウム・ファズの音は温度によってどう変わるのか？</a><br>
+                    <a href="http://guitar-hakase.com/effector/fuzz/" target="_blank">ファズ・エフェクターについて</a>
+                </p>
+                <p>僕はそんなビンテージマニア垂涎のゲルマに拘りがある訳でもなかった
+                    <s>し、エフェクターごときにお金をかけたくなかった</s>ので、シリコントランジスタの2N3906を使うことにした。</p>
+
+                <div class="contents-making-parts white">
+                    <p><b>😋部品一覧</b></p>
+                    <table id="parts_list" class="bordered">
+                        <thead>
+                            <tr>
+                                <th>種類</th>
+                                <th>値orメーカー</th>
+                                <th>個数</th>
+                                <th>小計</th>
+                                <th>備考</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>抵抗(カーボン皮膜)</th>
+                                <td>470R</td>
+                                <td>1</td>
+                                <td>¥5</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>5.1k</td>
+                                <td>1</td>
+                                <td>¥5</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>10k</td>
+                                <td>1</td>
+                                <td>¥5</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>47k</td>
+                                <td>1</td>
+                                <td>¥5</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>220k</td>
+                                <td>2</td>
+                                <td>¥10</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>2.2k</td>
+                                <td>1</td>
+                                <td>¥5</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th>コンデンサ(フィルム)</th>
+                                <td>0.1μF</td>
+                                <td>1</td>
+                                <td>¥30</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th>コンデンサ(電解)</th>
+                                <td>10μF</td>
+                                <td>3</td>
+                                <td>¥60</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th>ポット(Bカーブ)</th>
+                                <td>5k</td>
+                                <td>2</td>
+                                <td>¥200</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>10k</td>
+                                <td>3</td>
+                                <td>¥300</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th>トランジスタ(NPN)</th>
+                                <td>2N3904</td>
+                                <td>1</td>
+                                <td>¥100</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>2N3906</td>
+                                <td>2</td>
+                                <td>¥200</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th>LED</th>
+                                <td>5mm すみれ</td>
+                                <td>1</td>
+                                <td>¥100</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>ホルダー</td>
+                                <td>1</td>
+                                <td>¥50</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th>DCジャック</th>
+                                <td>少し良いやつ</td>
+                                <td>1</td>
+                                <td>¥120</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th>フォンジャック</th>
+                                <td>ステレオ(Switchcraft)</td>
+                                <td>1</td>
+                                <td>¥240</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>モノラル(Switchcraft)</td>
+                                <td>1</td>
+                                <td>¥200</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th>3PDTフットスイッチ</th>
+                                <td>CLIFF</td>
+                                <td>1</td>
+                                <td>¥400</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th>つまみ</th>
+                                <td>5色</td>
+                                <td>5</td>
+                                <td>¥600</td>
+                                <td>Garrettで購入。</td>
+
+                            </tr>
+                            <tr>
+                                <th>ユニバーサル基板</th>
+                                <td>片面スルー</td>
+                                <td>1</td>
+                                <td>¥120</td>
+                                <th>会社の上司から頂いた。</th>
+                            </tr>
+                            <tr>
+                                <th>ケース</th>
+                                <td>スーパーファミコン</td>
+                                <td>1</td>
+                                <td>プライスレス</td>
+                                <th class="red-text text-darken-2">家にあった。</th>
+                            </tr>
+                            <tr>
+                                <th colspan=5 class="red darken-3 white-text center-align">総計 ¥2755 くらい</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h5 id="ninety_percent">家にあるモノで9割できるっぽい。</h5>
+            </div>
+
+            <div class="contents-planning contents-util">
+                <div class="contents-header grey-text text-darken-3">
+                    <h5>工夫必須</h5>
+                    <h6>Plan your product</h6>
+                </div>
+                <p>まず、スーファミの中にパーツを組み込めるスペースがあるか確認してみる。</p>
+                <h4>画像</h4>
+                <small class="attention">※ちなみに本体をバラすには特殊ネジを回す専用のドライバーが必要。</small>
+                <p>一応高さ的に余裕があるので、前後どちらでもパーツは組み込めそう。ただ、前側に穴を空けたりするのは見栄え的にかっこ悪いので、後ろ側に回路をまとめることにした。</p>
+                
+            </div>
+
         </div>
     </div>
 
-    <div class="contents-finally contents-util center-align">
-        <div class="container">
-            <h5>編集後記</h5>
+    <div class="contents-finally center-align">
+        <div class="contents-finally-layer">
+            <h5><b>まとめ</b></h5>
+            <div class="container left-align">
+                <p>・ケースはきちんとしたアルミケースを使おう！</p>
+                <p>・筆者のバンドのライブに来てステッカーを買い、懐を温めよう！</p>
+            </div>
         </div>
     </div>
 
@@ -96,6 +296,10 @@
             <div class="row">
                 <div class="col l6 s12">
                     <p>最後までお付き合い頂き、ありがとうございました。</p>
+                    <p>基本的に製作に関してはインターネット自作界の巨匠、松美庵様の記事を参考にさせていただきました。レイアウト～パーツリストは勿論、説明も非常に丁寧で読みやすいので、本家のファズ工場を作りたい方は是非こちらを参考にしていただきたい。</p>
+                    <p>参考 :<br>
+                        <a href="http://www.matsumin.net/diy/jisaku1/fuzz_factory/index.html" target="_blank">誰にでも作れるFuzz FACTORY</a>
+                    </p>
                 </div>
             </div>
         </div>
